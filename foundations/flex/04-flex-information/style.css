@@ -7,9 +7,40 @@ img {
   height: 100px;
 }
 
+.title, 
+.info-item {
+  text-align: center;
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+  padding-bottom: 32px;
+}
+
+.info-container,
+.info-item,
+.footer {
+  display: flex;
+}
+
+.info-container,
+.footer {
+  justify-content: center;
+}
+
+.info-container {
+  gap: 52px;
+}
+
+.info-item,
+.footer {
+  align-items: center;
+}
+
+.info-item {
+  flex-flow: column wrap;
+  width: 200px;
 }
 
 /* do not edit this footer */
@@ -19,8 +50,5 @@ img {
   left: 0;
   right: 0;
   height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #eee;
 }
